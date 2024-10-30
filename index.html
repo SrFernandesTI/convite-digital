@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="audio" src="som_floresta.mp3" loop></audio>
+    <div class="background">
+        <div class="content">
+            <h1>CONVITE ESPECIAL</h1>
+            <p>Você está convidado para o dia da Família na Bica!</p>
+            <p>Dia 30 de Novembro de 2024</p>
+            <p>Cada família deve trazer um bolo com refrigerante/suco.</p>
+            <button onclick="playAudio()">Tocar Música</button>
+            <button onclick="window.open('https://maps.app.goo.gl/SqDcFiGeYEYj3QpJ8', '_blank')">Mapa</button>
+            <button onclick="openFamilyTable()">Famílias</button>
+            <div id="rotating-message" class="rotating-message"></div>
+        </div>
+    </div>
+    <!-- Botão do macaco -->
+    <div class="monkey-container">
+        <img src="icone_macaco.png" alt="Ícone de Macaco" class="monkey-icon">
+        <button class="monkey-button" onclick="showMonkeyGif()"></button>
+    </div>
+    
+    <img src="monkey.gif" alt="GIF de Macaco" class="monkey-gif" id="monkeyGif">
+
+
+    <script src="script.js"></script>
+</body>
+</html>

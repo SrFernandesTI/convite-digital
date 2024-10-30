@@ -1,0 +1,101 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Plano de fundo */
+.background {
+    background-image: url('bica-macacos.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Conteúdo do convite */
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Mensagens rotativas */
+.rotating-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Botões */
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+/* Adicione ao seu CSS existente */
+
+/* Container do ícone do macaco */
+.monkey-container {
+    position: fixed; /* Fixa no canto inferior direito */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância do lado direito */
+    width: 100px; /* Largura da imagem */
+    height: 92px; /* Altura da imagem */
+}
+
+/* Estilo do ícone do macaco */
+.monkey-icon {
+    width: 100px; /* Largura */
+    height: 92px; /* Altura */
+}
+
+/* Estilo do botão do macaco */
+.monkey-button {
+    position: absolute; /* Para ficar em cima da imagem */
+    top: 0; /* Alinha ao topo do ícone */
+    left: 0; /* Alinha à esquerda do ícone */
+    width: 100%; /* Preenche toda a área da imagem */
+    height: 100%; /* Preenche toda a área da imagem */
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Aponta o cursor ao passar em cima */
+}
+
+/* Estilo do GIF do macaco */
+.monkey-gif {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância do lado direito */
+    display: none; /* Oculto inicialmente */
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    z-index: 10; /* Certifique-se de que ele fique acima de outros elementos */
+}
